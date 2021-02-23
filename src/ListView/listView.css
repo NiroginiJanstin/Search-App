@@ -1,0 +1,35 @@
+* {box-sizing: border-box;}
+
+.image {
+  width: 250px;
+  height: 250px;
+  border: 2px solid rgb(177, 120, 120);
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1; 
+  width: 250px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+}
+
+.my-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .p1{
+    float: left;
+}
+
+.overlay .p2{
+    float: right;
+    color:white;
+}
